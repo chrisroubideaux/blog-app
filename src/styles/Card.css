@@ -1,0 +1,31 @@
+/* card */
+.card {
+   background-color: #dadada;
+   border-radius: 30px;   
+   border-style: none;
+   box-shadow: .1rem .1rem .8rem #797878;
+   margin: auto;
+}
+
+.card-header {
+   background: rgb(92,95,136);
+   background: linear-gradient(166deg, rgba(92,95,136,1) 5%, rgba(105,108,163,1) 22%, rgba(146,153,254,1) 100%, rgba(41,77,123,1) 100%, rgba(30,69,109,1) 100%);
+   box-shadow: .1rem .1rem .8rem #696969;
+   border-style: none;
+}
+.card-body {
+   background-color: #dadada;  
+   border-style: none;
+   border-radius: 30px;
+   margin: auto;
+}
+  
+.card:hover {
+    transform: scale(1.07); 
+}
+
+.badge {
+  border-radius: 30px;  
+}
+
+   

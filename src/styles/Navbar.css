@@ -1,0 +1,62 @@
+/*nav*/
+.navbar  {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+    
+.nav-link {
+  color:#3b7fa1;
+  font-size: 20px;
+  font-weight: 700; 
+}
+  
+.nav-item {
+  padding-top: .8rem;
+  color:#93B5C6; 
+}
+  
+li a {
+  color:#93B5C6; 
+}
+  
+.nav-item:hover {
+  color:#e8f4fa; 
+}
+  
+.nav-link:hover {
+  color:#84a4ce; 
+}
+  
+.form-control {
+  border-radius: 30px;
+  width: 300px;
+   border-style: solid,  color #3b7fa1;
+}
+  
+.dropdown-menu {
+  background-size: cover;
+  background: rgb(92,95,136);
+  background: linear-gradient(166deg, rgba(92,95,136,1) 5%, rgba(146,153,254,1) 64%, rgba(41,77,123,1) 100%, rgba(30,69,109,1) 100%, rgba(105,108,163,1) 100%);
+  width: 340px;
+  transition: bottom .75s ease-in-out;
+  border-style: none;
+}
+  
+.dropdown-item {
+  width: 340px;
+  transition: bottom .75s ease-in-out; 
+  padding-top: .8rem;
+  color: antiquewhite;   
+}
+
+.avatar {
+  background-color: grey;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(182, 224, 224);
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+}

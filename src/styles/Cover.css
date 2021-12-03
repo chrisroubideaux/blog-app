@@ -1,0 +1,49 @@
+.cover {
+  height: 100vh;
+  background: rgb(92,95,136);
+  background: linear-gradient(166deg, rgba(92,95,136,1) 5%, rgba(105,108,163,1) 22%, rgba(146,153,254,1) 100%, rgba(41,77,123,1) 100%, rgba(30,69,109,1) 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Anton', sans-serif;
+  text-shadow: .1rem .1rem .8rem #727272;
+}
+
+h1 {
+  font-size: 50px; 
+  color:#f0e9dd;
+  text-shadow: .1rem .1rem .8rem #727272;
+}
+
+.par {
+  font-size: 20px;
+  color:#e0e0df;
+  text-shadow: .1rem .1rem .8rem #575656; 
+}
+
+/* buttons */
+.btn {
+  background-color: #f0e9dd;
+  color:#497d97; 
+  border-radius: 30px;
+  font-weight: bold;
+}
+      
+.btn:hover {
+  transform: scale(1.07); 
+  background-color:#93B5C6; 
+}
+    
+/* img */
+  
+.img {
+  max-height: 70px;
+  width: 60%;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-style: none; 
+}
+    
+.img:hover {
+ transform: scale(1.07); 
+}
