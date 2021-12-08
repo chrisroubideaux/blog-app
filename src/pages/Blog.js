@@ -4,17 +4,14 @@ import axios from "axios";
 import { useLocation } from "react-router";
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
-
-import Posts from "../components/Posts"
+import Posts from '../components/Posts';
 import Sidebar from "../components/Sidebar";
 import Footer from '../components/Footer';
-
-
-
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
   const { search } = useLocation();
+
 
   useEffect(() => {
     const fetchPosts = async () => {

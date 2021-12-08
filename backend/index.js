@@ -8,9 +8,7 @@ const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const path = require("path");
-
 dotenv.config();
-
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
@@ -18,8 +16,6 @@ mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify:true
   })
   .then(console.log("Connected to MongoDB"))
   .catch((err) => console.log(err));
@@ -34,17 +30,16 @@ const storage = multer.diskStorage({
   },
 });
 
-
 const upload = multer({ storage: storage });
-app.post("/backend/upload", upload.single("file"), (req, res) => {
+app.post("/api/upload", upload.single("file"), (req, res) => {
   res.status(200).json("File has been uploaded");
 });
 
-app.use("/backend/auth", authRoute);
-app.use("/backend/users", userRoute);
-app.use("/backend/posts", postRoute);
-app.use("/backend/categories", categoryRoute);
+app.use("/api/auth", authRoute);
+app.use("/api/users", userRoute);
+app.use("/api/posts", postRoute);
+app.use("/api/categories", categoryRoute);
 
 app.listen("5000", () => {
-  console.log("Backend is running.");
+  console.log("it works.");
 });

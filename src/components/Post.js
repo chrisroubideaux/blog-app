@@ -8,11 +8,11 @@ export default function Post({ post }) {
       <div className="">
         <div className="">
           {post.categories.map((c) => (
-            <span className="">{c.name}</span>
+            <span className="">{c.name} </span>
           ))}
         </div>
         <Link to={`/post/${post._id}`} className="">
-          <span className="">{post.title} </span>
+          <span className="">{post.title}  </span>
         </Link>
         <hr />
         <span className="">

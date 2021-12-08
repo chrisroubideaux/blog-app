@@ -61,6 +61,7 @@ export default function Settings() {
               <i className="settingsPPIcon far fa-user-circle"></i>
             </label>
             <input
+              className="input form-control m-2"
               type="file"
               id="fileInput"
               style={{ display: "none" }}

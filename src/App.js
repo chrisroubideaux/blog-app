@@ -7,7 +7,7 @@ import Single from "./pages/Single";
 import Write from "./pages/Write";
 import Settings from "./pages/Settings";
 import Register from "./pages/Register";
-import Login from './pages/Login';
+import Test from './pages/Test';
 import Signup from './pages/Signup';
 import './App.css';
 
@@ -25,7 +25,7 @@ function App() {
     <Route path="/write">{user ? <Write /> : <Signup />}</Route>
     <Route path="/settings">{user ? <Settings /> : <Signup />}</Route>
     <Route path="/register">{user ? <Home /> : <Register />}</Route> 
-    <Route exact path="/Login" >{user ? <Home /> : <Login />}</Route>
+    <Route exact path="/Test" >{user ? <Home /> : <Test />}</Route>
     <Route exact path="/Signup">{user ? <Home /> : <Signup />}</Route>
     <Route path="/post/:postId">
       <Single />
