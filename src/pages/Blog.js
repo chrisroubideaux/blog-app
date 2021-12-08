@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+
 import { Helmet } from 'react-helmet';
-import axios from "axios";
-import { useLocation } from "react-router";
+
+
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import Posts from '../components/Posts';
@@ -9,17 +9,10 @@ import Sidebar from "../components/Sidebar";
 import Footer from '../components/Footer';
 
 export default function Blog() {
-  const [posts, setPosts] = useState([]);
-  const { search } = useLocation();
+ 
 
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      const res = await axios.get("/posts" + search);
-      setPosts(res.data);
-    };
-    fetchPosts();
-  }, [search]);
+
 
     return (
 
@@ -37,7 +30,7 @@ export default function Blog() {
             <div className=" blog">
               <Navbar/>
               <Header/>
-              <Posts posts={posts} />
+              <Posts/>
               <Sidebar />
               <Footer/>
             </div>

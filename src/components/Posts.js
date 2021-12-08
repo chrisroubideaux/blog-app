@@ -1,12 +1,12 @@
 import Post from "../components/Post"
 
 
-export default function Posts({ posts }) {
+export default function Posts() {
   return (
     <div className="">
-      {posts.map((p) => (
-        <Post post={p} />
-      ))}
+      
+        <Post />
+    
     </div>
   );
 }

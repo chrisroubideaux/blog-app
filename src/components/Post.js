@@ -1,25 +1,23 @@
 import { Link } from "react-router-dom";
 
-export default function Post({ post }) {
+export default function Post() {
  
   return (
     <div className="container-fluid">
-      {post.photo && <img className="img" src="" alt="" />}
+       <img className="img" src="" alt="" />
       <div className="">
         <div className="">
-          {post.categories.map((c) => (
-            <span className="">{c.name} </span>
-          ))}
+         
         </div>
-        <Link to={`/post/${post._id}`} className="">
-          <span className="">{post.title}  </span>
+        <Link to="" className="">
+          <span className="">  </span>
         </Link>
         <hr />
         <span className="">
-          {new Date(post.createdAt).toDateString()}
+        
         </span>
       </div>
-      <p className="">{post.desc}</p>
+      <p className=""></p>
     </div>
   );
 }

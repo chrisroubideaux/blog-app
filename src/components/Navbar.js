@@ -31,7 +31,7 @@ export default function Navbar() {
                   <Link className="nav-link" to="/News">News</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/Write">Write</Link>
+                  <Link className="nav-link" to="/Write">Post</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/Settings">Settings</Link>
@@ -46,7 +46,7 @@ export default function Navbar() {
                 </Link>
                 ) : (
                 <><li className="nav-item">
-                    <Link className="nav-link" to="/Test">
+                    <Link className="nav-link" to="/Log I">
                       Login
                     </Link>
                 </li></>
