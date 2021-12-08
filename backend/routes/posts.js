@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const User = require("../models/User");
-const Post = require("../models/Post").default;
+const User = require("../models/User")
+const Post = require("../models/Post");
 
 //CREATE POST
 router.post("/", async (req, res) => {
@@ -31,7 +31,7 @@ router.put("/:id", async (req, res) => {
         res.status(500).json(err);
       }
     } else {
-      res.status(401).json("You can only update your post!");
+      res.status(401).json("You can update only your post!");
     }
   } catch (err) {
     res.status(500).json(err);
@@ -50,7 +50,7 @@ router.delete("/:id", async (req, res) => {
         res.status(500).json(err);
       }
     } else {
-      res.status(401).json("You can only delete your own post!");
+      res.status(401).json("You can delete only your post!");
     }
   } catch (err) {
     res.status(500).json(err);

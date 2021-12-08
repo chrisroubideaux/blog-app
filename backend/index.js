@@ -31,14 +31,14 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
-app.post("/api/upload", upload.single("file"), (req, res) => {
+app.post("/backend/upload", upload.single("file"), (req, res) => {
   res.status(200).json("File has been uploaded");
 });
 
-app.use("/api/auth", authRoute);
-app.use("/api/users", userRoute);
-app.use("/api/posts", postRoute);
-app.use("/api/categories", categoryRoute);
+app.use("/backend/auth", authRoute);
+app.use("/backend/users", userRoute);
+app.use("/backend/posts", postRoute);
+app.use("/backend/categories", categoryRoute);
 
 app.listen("5000", () => {
   console.log("it works.");

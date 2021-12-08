@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const User = require("../models/User").default;
-const Post = require("../models/Post").default;
+const User = require("../models/User");
+const Post = require("../models/Post");
 const bcrypt = require("bcrypt");
 
 //UPDATE
@@ -23,7 +23,7 @@ router.put("/:id", async (req, res) => {
       res.status(500).json(err);
     }
   } else {
-    res.status(401).json("Can only update your account!");
+    res.status(401).json("May only delete your account!");
   }
 });
 
@@ -43,7 +43,7 @@ router.delete("/:id", async (req, res) => {
       res.status(404).json("User not found!");
     }
   } else {
-    res.status(401).json("Can only delete your account!");
+    res.status(401).json("May only delete your account!");
   }
 });
 
