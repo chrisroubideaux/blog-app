@@ -1,19 +1,13 @@
 
 import { Helmet } from 'react-helmet';
-
-
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
-import Posts from '../components/Posts';
-import Sidebar from "../components/Sidebar";
 import Footer from '../components/Footer';
+import Sidebar from '../components/Sidebar';
+
 
 export default function Blog() {
  
-
-
-
-
     return (
 
         <>
@@ -30,8 +24,8 @@ export default function Blog() {
             <div className=" blog">
               <Navbar/>
               <Header/>
-              <Posts/>
-              <Sidebar />
+              <Sidebar/> 
+             
               <Footer/>
             </div>
         </>

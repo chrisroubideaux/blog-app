@@ -2,8 +2,9 @@ const router = require("express").Router();
 const User = require("../models/User").default;
 const bcrypt = require("bcrypt");
 
-//REGISTER
-router.post("/register", async (req, res) => {
+
+//SIGNUP
+router.post("/signup", async (req, res) => {
   try {
     const salt = await bcrypt.genSalt(10);
     const hashedPass = await bcrypt.hash(req.body.password, salt);

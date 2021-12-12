@@ -14,11 +14,12 @@ export default function Sidebar() {
     getCats();
   }, []);
   return (
-    <div className="sidebar">
+    <div className="container-fluid header">
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
         <img
           src="https://i.pinimg.com/236x/1e/3f/58/1e3f587572a7a7b20bbf1828595a1786--holiday-party-themes-holiday-gift-guide.jpg"
+          className="img"
           alt=""
         />
         <p>
@@ -26,9 +27,9 @@ export default function Sidebar() {
           necessitatibus nostrum illum reprehenderit.
         </p>
       </div>
-      <div className="sidebarItem">
-        <span className="sidebarTitle">CATEGORIES</span>
-        <ul className="sidebarList">
+      <div className="">
+        <span className="">CATEGORIES</span>
+        <ul className="">
           {cats.map((c) => (
             <Link to={`/?cat=${c.name}`} className="link">
             <li className="sidebarListItem">{c.name}</li>

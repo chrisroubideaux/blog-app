@@ -9,17 +9,18 @@ const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const path = require("path");
 dotenv.config();
+
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect( "mongodb://localhost:27017/blog", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+  
   })
   .then(console.log("Connected to MongoDB"))
   .catch((err) => console.log(err));
-
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {

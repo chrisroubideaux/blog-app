@@ -46,7 +46,7 @@ export default function SinglePost() {
   };
 
   return (
-    <div className="container-fluid">
+    <div className="header">
       <div className="col">
         {post.photo && (
           <img src="" alt="" className="img" />
