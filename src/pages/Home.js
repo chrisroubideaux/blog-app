@@ -23,7 +23,7 @@ export default function Home() {
                
                 <img className="img" src="http://pngimg.com/uploads/paper_plane/paper_plane_PNG87.png " alt=""/>
             
-                <p className=" m-4"> A blogging web app built with react.js, python, django & postgres.</p>
+                <p className=" m-4"> A blogging web app built with react, node.js express & mongodb.</p>
                 <Link className="btn btn-md" to="/Blog">Shop now</Link>
               </div>
            
